@@ -1,4 +1,3 @@
-
 {
   "version": 2,
   "builds": [
@@ -9,12 +8,20 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "css/estilos.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "backend/src/index.js"
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
     },
     {
       "src": "/(.*)",
