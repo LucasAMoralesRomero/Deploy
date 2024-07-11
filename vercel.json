@@ -12,6 +12,10 @@
     {
       "src": "css/estilos.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "css/amb_estilos.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
