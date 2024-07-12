@@ -51,7 +51,7 @@ const getPruebaParam3 = (req, res) => {
 const getAllMovies1 = (req, res) => {
     //const sql = 'SELECT * FROM movies.pelicula';
     const sql = 'SELECT id, title, year_release, image_poster FROM housebank_movies_new.movies';
-    db.query(sql, (err, results) => {
+    db.query(sql, (err, results) => { 
         if (err) throw err;
         res.json(results);
     }); 
